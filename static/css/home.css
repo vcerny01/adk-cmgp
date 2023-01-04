@@ -1,0 +1,11 @@
+h1 {
+    font-size: 3.5em;
+}
+#content {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+#content div {
+    width: 50%;
+}

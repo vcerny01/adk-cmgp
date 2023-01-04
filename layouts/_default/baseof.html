@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html class="light" lang="{{ .Site.LanguageCode }}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {{partial "favicon.html"}}
+    {{block "head" .}}
+    {{end}}
+    <link rel="stylesheet" type="text/css" href="/css/base.css">
+    <title>{{if .Params.title}}{{.Params.title}}{{else}}{{ with .File }}{{ .BaseFileName }}{{ end }}{{end}}</title>
+</head>
+<body>
+    <header>
+        {{block "header" .}}
+        {{end}}
+    </header>
+    <main id="content">
+        {{block "main" .}}
+        {{end}}
+    </main>
+    <div id="footer">
+        {{block "footer.html" .}}
+        {{end}}
+    </div>
+    {{partial "analytics.html"}}
+</body>
+</html>

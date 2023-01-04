@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro&display=swap');
+
+:root, :root.dark {
+    --bg-color: #212121;
+    --secondary-bg-color: #282A3A;
+    --terciary-bg-color: #735F32;
+    --text-color: #F6F6F6;
+    --link-color: #D9CAB3;
+    --secondary-link-color: #ff8669;
+    --font: "Source Serif Pro";
+}
+
+body {
+    margin: auto;
+    padding: 2rem;
+    max-width: 1300px;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: var(--font);
+    margin-bottom: 400px;
+}
+
